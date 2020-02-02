@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 
 namespace ConsoleApp1
@@ -11,7 +11,7 @@ namespace ConsoleApp1
             Console.WriteLine($"Enter the factorial:");
             int num = int.Parse(Console.ReadLine());
             int i = 1;
-            double res = 0;
+            long res = 0;
             while (i <= num)
             {
                 if (i == 1)
