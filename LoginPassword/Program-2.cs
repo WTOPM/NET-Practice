@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -17,10 +17,7 @@ namespace ConsoleApp1
             {
                 Console.WriteLine($"Password:");
                 string pass = Console.ReadLine();
-
-                int indLogin = Array.IndexOf(arrayLogin, login);
-                int indPass = Array.IndexOf(arrayPass, pass);
-                if (indLogin == indPass)
+                if(Array.IndexOf(arrayLogin, login) == Array.IndexOf(arrayPass, pass))
                     Console.WriteLine("Login successful");
                 else
                     Console.WriteLine("Wrong password");
