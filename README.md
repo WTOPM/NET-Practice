@@ -1,5 +1,4 @@
-# Java-Practice
-Having fun with Java.
+# C# Practice
 
 # Git
 > Version-control system
