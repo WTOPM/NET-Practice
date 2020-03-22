@@ -3,5 +3,3 @@
 # Git
 > Version-control system
 
-[Cheat sheet](http://overapi.com/static/cs/git-cheat-sheet.pdf)
-
