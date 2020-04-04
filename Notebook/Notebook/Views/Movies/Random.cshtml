@@ -3,8 +3,13 @@
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@*
+    This is a comment    
+*@
+
 @{
-    var className = Model.Customers.Count > 5 ? "popular" : null;
+    var className = Model.Customers.Count > 0 ? "popular" : null;
 }
 
 <h2 class="popular">@Model.Movie.Name</h2>
