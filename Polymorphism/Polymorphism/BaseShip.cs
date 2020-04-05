@@ -2,37 +2,49 @@
 
 namespace Polymorphism
 {
-    public class BaseShip // :System.Object
+    public class BaseShip
     {
-        protected int _speed;
-
         public virtual string Move(int distance)
-        { 
-
+        {
             string result = string.Format("Пройдено километров: {0}", distance);
 
             return result;
         }
 
-        public override string ToString()
+        public virtual string Fight()
         {
-            return "Базовый класс для всех кораблей";
+            return "Произошел бой";
         }
     }
 
+    public class FightShip : BaseShip
+    {
+        public override string Move(int distance)
+        {
+            return string.Format("Пройдено километров: {0} за время:", distance);
+        }
+        public override string Fight()
+        {
+            return "Противник уничтожен";
+        }
+        public override string ToString()
+        {
+            return "Боевой корабль";
+        }
+    }
     public class TransportShip : BaseShip
     {
         public override string Move(int distance)
         {
-            string result = base.Move(distance);
-            result += string.Format("\r\nТранспортный корабль преодалел километров:", distance);
-            return result;
+            return string.Format("Пройдено километров: {0} за время:", distance);
         }
-
+        public override string Fight()
+        {
+            return "Транспортный корабль не может вступать в бой";
+        }
         public override string ToString()
         {
-            return "Транспортный корабль";
+            return "Боевой корабль";
         }
-
     }
 }
