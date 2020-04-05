@@ -1,26 +1,33 @@
-﻿namespace Polymorphism
+﻿using System;
+
+namespace Polymorphism
 {
     public class BaseShip // :System.Object
     {
-        
-        private int _counter;
         protected int _speed;
 
-        public string Move(int distance)
-        {
-            _counter++;
+        public virtual string Move(int distance)
+        { 
 
             string result = string.Format("Пройдено километров: {0}", distance);
 
             return result;
         }
+
+        public override string ToString()
+        {
+            return "Базовый класс для всех кораблей";
+        }
     }
 
     public class TransportShip : BaseShip
     {
-        public void Start()
+        public override string Move(int distance)
         {
-
+            string result = base.Move(distance);
+            result += string.Format("\r\nТранспортный корабль преодалел километров:", distance);
+            return result;
         }
+        
     }
 }

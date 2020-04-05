@@ -6,9 +6,9 @@ namespace Polymorphism
     {
         static void Main(string[] args)
         {
-            TransportShip ship = new TransportShip();
+            BaseShip ship = new TransportShip();
 
-            string res = ship.Move(1000); // Inheritance
+            string res = ship.ToString();
 
             Console.WriteLine(res);
             Console.ReadLine();
