@@ -28,6 +28,11 @@ namespace Polymorphism
             result += string.Format("\r\nТранспортный корабль преодалел километров:", distance);
             return result;
         }
-        
+
+        public override string ToString()
+        {
+            return "Транспортный корабль";
+        }
+
     }
 }
