@@ -84,3 +84,7 @@ C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\obj\Debug\Pho
 C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\obj\Debug\PhoneMarket.csproj.CopyComplete
 C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\obj\Debug\PhoneMarket.dll
 C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\obj\Debug\PhoneMarket.pdb
+C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\bin\EntityFramework.dll
+C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\bin\EntityFramework.SqlServer.dll
+C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\bin\EntityFramework.xml
+C:\Users\WTOPM\Desktop\GIT\NET-Practice\PhoneMarketMVC\PhoneMarket\bin\EntityFramework.SqlServer.xml
