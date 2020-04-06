@@ -11,7 +11,33 @@
     <title>Buy</title>
 </head>
 <body>
-    <div> 
-    </div>
+<div>
+    <h3>Оформление покупки</h3>
+    <br />
+    
+    <form method="post" action="">
+        
+        <input type="hidden" name="PhoneId" value="@ViewBag.Id"/>
+        <table>
+            <tbody>
+            <tr>
+                <td>ФИО</td>
+                <td><input type="text" name="FIO" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="Email" /></td>
+            </tr>
+            <tr>
+                <td>Адрес</td>
+                <td><input type="text" name="Address" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Оформить покупку" /></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
 </body>
 </html>
