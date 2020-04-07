@@ -1,15 +1,7 @@
 ﻿@{
-    Layout = null;//для представления не используется мастер-страница
+    Layout = "/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>
-        Index
-    </title>
-</head>
-<body>
 <h3>Товары интернет-магазина PhoneMarket</h3>
 
 <br />
@@ -30,11 +22,9 @@
                 <td>@phone.Name</td>
                 <td>@phone.Producer</td>
                 <td>@phone.Price</td>
-                <td><a href="/Home/Buy/@phone.Id">Купить</a></td>
+                <td><a href="/Home/Buy?id=@phone.Id">Купить</a></td>
             </tr>  
         }
     }
     </tbody>
 </table>
-</body>
-</html>
