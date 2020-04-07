@@ -38,5 +38,17 @@ namespace PhoneMarket.Controllers
 
             return $"Уважаемый, {purchase.FIO}, с вами скоро свяжутся";
         }
+
+        [HttpGet]
+        public ActionResult SomeMethod()
+        {
+            ViewData["Date"] = DateTime.Now;
+            return View("/Views/Home/MyView.cshtml");
+        }
+        [HttpGet]
+        public ActionResult SomeView()
+        {
+            return View();
+        }
     }
 }
