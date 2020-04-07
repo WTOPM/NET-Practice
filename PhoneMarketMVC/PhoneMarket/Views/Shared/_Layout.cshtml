@@ -15,5 +15,15 @@
     @RenderBody()
 
 </div>
+<footer>
+    @if (IsSectionDefined("Footer"))
+    {
+        @RenderSection("Footer")
+    }
+    else
+    {
+        <span>Футер по умолчанию</span>
+    }
+</footer>
 </body>
 </html>

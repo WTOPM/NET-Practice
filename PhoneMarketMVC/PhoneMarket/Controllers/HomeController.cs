@@ -50,5 +50,11 @@ namespace PhoneMarket.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public ActionResult ListBooks()
+        {
+            return View(phoneContext.Phones);
+        }
     }
 }

@@ -279,6 +279,7 @@
     <Content Include="Views\Home\Buy.cshtml" />
     <Content Include="Views\Home\MyView.cshtml" />
     <Content Include="Views\Home\SomeView.cshtml" />
+    <Content Include="Views\Home\ListBooks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
