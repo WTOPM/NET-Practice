@@ -135,8 +135,10 @@
     </Compile>
     <Compile Include="Models\DBInitializer.cs" />
     <Compile Include="Models\Phone.cs" />
+    <Compile Include="Models\UserContext.cs" />
     <Compile Include="Models\PhoneContext.cs" />
     <Compile Include="Models\Purchase.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -280,6 +282,7 @@
     <Content Include="Views\Home\MyView.cshtml" />
     <Content Include="Views\Home\SomeView.cshtml" />
     <Content Include="Views\Home\ListBooks.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

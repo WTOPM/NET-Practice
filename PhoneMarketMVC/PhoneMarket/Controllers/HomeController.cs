@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,6 +11,7 @@ namespace PhoneMarket.Controllers
     public class HomeController : Controller
     {
         PhoneContext phoneContext = new PhoneContext();
+        UserContext userContext = new UserContext();
         public ActionResult Index()
         {    //Извлекаем данные из таблицы Phones
             IEnumerable<Phone> phones = phoneContext.Phones;
@@ -56,5 +58,18 @@ namespace PhoneMarket.Controllers
         {
             return View(phoneContext.Phones);
         }
+
+        [HttpGet]
+        public ActionResult Register()
+        {
+            //Извлекаем данные из таблицы 
+            IEnumerable<User> users = userContext.Users;
+
+            //Записываем phones в динамическое свойство ViewBag
+            ViewBag.Users = users;
+            return View();
+        }
+
+
     }
 }
