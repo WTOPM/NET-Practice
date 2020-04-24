@@ -18,12 +18,6 @@ namespace Factorial
                     return number * GetFactorial(number - 1);
                 }
             }
-
-        
-
-        
-        
-
     }
     
 }
